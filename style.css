@@ -83,10 +83,10 @@ a {
 
 @media print {
     #interface {
-        display: none !important;
+        display: none;
     }
     #boutons {
-        display: none !important;
+        display: none;
     }
     #result {
         display: block;
