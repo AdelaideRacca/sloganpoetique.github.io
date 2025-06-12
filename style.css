@@ -85,9 +85,6 @@ a {
     #interface {
         display: none;
     }
-    #boutons {
-        display: none;
-    }
     #result {
         display: block;
         color: red;
