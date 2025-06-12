@@ -94,8 +94,7 @@ a {
     }
     #result {
         display: block !important;
-        color: blue;
-        font: 1.2rem "Helvetica", sans-serif;
+        font: 28pt "Helvetica", sans-serif;
         text-transform: uppercase;
         font-weight: bold;
     } 
