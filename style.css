@@ -1,0 +1,91 @@
+body,html {
+    margin:0;
+    width: 100%;   
+}
+body {
+    padding: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+}
+
+#rules {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -14px;
+}
+
+#rules div {
+    width: calc( 25% - 14px );
+    margin: 14px;
+    margin-left: 0px;
+}
+
+.rule {
+    order:-1;
+    position: relative;
+}
+
+.rule p:first-of-type {
+    margin-top: 0px;
+}
+
+.rule textarea {
+    height: 10em;
+}
+
+#addDiv {
+    margin-left: auto !important;
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 4em;
+}
+
+#addDiv a {
+    display: inline-block;
+    margin-top: 0.5em;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2em;
+}
+
+.hidden {
+    display:none;
+}
+
+.close{
+    width:0.5em;
+    color: gray;
+    background: none;
+    font-family: sans;
+    position: absolute;
+    top: -0.5em;
+    right: 0px;
+}
+
+#clear {
+    margin-top: 0.5em;;
+}
+
+/* -------------- IMPRESSION ------------ */
+
+@media print {
+  * {
+    display: none !important;
+    }
+    .result {
+        color: red;
+    } 
+}
