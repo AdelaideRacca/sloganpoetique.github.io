@@ -93,6 +93,7 @@ a {
     }
     #result {
         display: block !important;
-        color: red;
+        color: blue;
+        font: 1.2rem "Fira Sans", sans-serif;
     } 
 }
