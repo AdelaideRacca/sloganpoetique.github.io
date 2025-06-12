@@ -12,6 +12,7 @@ body {
 
 textarea {
     width: 100%;
+    background-color: red;
 }
 
 #rules {
@@ -93,7 +94,7 @@ a {
     }
     #result {
         display: block !important;
-        color: blue;
-        font: 1.2rem "Fira Sans", sans-serif;
+        color: black;
+        font: 20pt "Fira Sans", sans-serif;
     } 
 }
