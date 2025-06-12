@@ -82,7 +82,7 @@ a {
 /* -------------- IMPRESSION ------------ */
 
 @media print {
-    #interface, {
+    #interface, #boutons{
         display: none !important;
     }
     #result {
