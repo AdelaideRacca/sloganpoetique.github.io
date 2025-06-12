@@ -4,6 +4,7 @@ body,html {
 }
 body {
     padding: 14px;
+    font-family: "Helvetica", sans-serif;
 }
 
 * {
@@ -12,7 +13,6 @@ body {
 
 textarea {
     width: 100%;
-    background-color: red;
 }
 
 #rules {
@@ -55,7 +55,7 @@ textarea {
 a {
     display: inline-block;
     width: 100%;
-    background-color: grey;
+    background-color: Tomato;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -94,7 +94,9 @@ a {
     }
     #result {
         display: block !important;
-        color: black;
-        font: 20pt "Fira Sans", sans-serif;
+        color: blue;
+        font: 1.2rem "Helvetica", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
     } 
 }
