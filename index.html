@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur</title>
+    <script src="tracery.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>Phrase</h2>
+        <textarea id="origin"></textarea>
+    </div>
+    <h2>Règles :</h2>
+    <div id="rules">
+        <div id="addDiv">
+            <a href="#" id="import">Importer des règles</a>
+            <input type="file" id="input" class="hidden" />
+            <a href="#" id="export">Exporter les règles</a>
+            <a href="#" id="add">Ajouter une règle</a>
+        </div>
+    </div>
+    <h2>Publications :</h2>
+    <div id="result"></div>
+    <div>
+        <a href="#" id="generate">Générer</a>
+        <a href="#" id="clear">Effacer</a>
+    </div>
+    <script type="text/template" id="addRule">
+        <a class="close" href="#">🗙</a>
+            <p><label>Nom (sans espace) : </label><input type="text" class="name" value="<%= title %>"></p>
+            
+            <textarea class="elements"><%= els %></textarea>
+    </script>
+</body>
+</html>
