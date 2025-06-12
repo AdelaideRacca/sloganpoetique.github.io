@@ -82,10 +82,11 @@ a {
 /* -------------- IMPRESSION ------------ */
 
 @media print {
-  * {
-    display: none !important;
+    #interface, {
+        display: none !important;
     }
-    .result {
+    #result {
+        display: block;
         color: red;
     } 
 }
