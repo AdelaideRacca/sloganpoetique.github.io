@@ -56,7 +56,7 @@ function closeRule(e){
 
     if(rule.getElementsByClassName("elements")[0].value.trim() != "") {
         console.log("confirm");
-        if(!confirm("Etes-vous sÃ»r de vouloir supprimer cette rÃ¨gle et tout ce qu'elle contient ?")) return;
+        if(!confirm("Etes-vous sûr de vouloir supprimer cette règle et tout ce qu'elle contient ?")) return;
     }
     
     rulesDiv.removeChild(rule);
@@ -75,7 +75,7 @@ function exportLinkFn(e){
 
 function importLinkFn(e){
     e.preventDefault();
-    if(confirm("Importer remplace tout ce qui est dÃ©jÃ  inscrit, assurez-vous d'avoir exporter votre travail en cours avant.")) importFile.click();
+    if(confirm("Importer remplace tout ce qui est déjà  inscrit, assurez-vous d'avoir exporter votre travail en cours avant.")) importFile.click();
 }
 
 function importFileFn(e){
