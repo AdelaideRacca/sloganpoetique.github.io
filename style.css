@@ -85,6 +85,9 @@ a {
     #interface {
         display: none !important;
     }
+    h2 {
+        display: none !important;
+    }    
     #boutons {
         display: none !important;
     }
