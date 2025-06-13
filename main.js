@@ -75,7 +75,7 @@ function exportLinkFn(e){
 
 function importLinkFn(e){
     e.preventDefault();
-    if(confirm("Importer remplace tout ce qui est déjà  inscrit, assurez-vous d'avoir exporter votre travail en cours avant.")) importFile.click();
+    if(confirm("Importer remplace tout ce qui est déjà inscrit, assurez-vous d'avoir exporter votre travail en cours avant.")) importFile.click();
 }
 
 function importFileFn(e){
@@ -99,6 +99,9 @@ function generateLinkFn(e) {
 }
 
 function generate() {
+    // if(confirm("Êtes-vous sûr de vouloir générer un nouveau slogan?")) 
+    // Pour réinitialiser les résultats
+    resultDiv.innerHTML = "";
     var grammar = {};
     grammar.origin = originDiv.value.replace("\n","<br>");
 
