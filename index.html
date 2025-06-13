@@ -36,7 +36,7 @@
     </div>
     <script type="text/template" id="addRule">
         <a class="close" href="#">🗙</a>
-            <p><label>Nom (sans espace) : </label><input type="text" class="name" value="<%= title %>"></p>
+            <p><label>Écrivez ci-dessous un : </label><input type="text" class="name" value="<%= title %>"></p>
             
             <textarea class="elements"><%= els %></textarea>
     </script>
@@ -54,9 +54,9 @@ function hideInterface() {
   var x = document.getElementById("interface");
     x.style.display = "none";
   var y = document.getElementById("clear");
-    x.style.display = "block";
-  var y = document.getElementById("print");
-    x.style.display = "block";
+    y.style.display = "block";
+  var z = document.getElementById("print");
+    z.style.display = "block";
 }
 function showInterface() {
   var x = document.getElementById("interface");
