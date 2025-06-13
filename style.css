@@ -77,8 +77,19 @@ a {
 }
 
 #clear {
-    margin-top: 0.5em;;
+    margin-top: 0.5em;
 }
+
+#print {
+    margin-top: 0.5em;
+}
+
+#result p {
+    font: 50px "Helvetica", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 /* -------------- IMPRESSION ------------ */
 
@@ -94,8 +105,17 @@ a {
     }
     #result {
         display: block !important;
-        font: 28pt "Helvetica", sans-serif;
+        color: black;
+        font: 20px "Helvetica", sans-serif;
         text-transform: uppercase;
         font-weight: bold;
+        /*writing-mode: vertical-rl;*/
     } 
+}
+@page {
+  size: 180mm 58mm;
+  margin-top: 2mm;
+  margin-right: 2mm;
+  margin-bottom: 2mm;
+  margin-left: 2mm;
 }
