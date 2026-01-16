@@ -12,12 +12,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body onload="showOne()">
+    <h1>Générateur de slogan poétique</h1>
+    <h2>Nourris la machine à slogan :</h2>
     <div id="interface">
         <div id="phrase">
             <h2>Phrase</h2>
             <textarea id="origin"></textarea>
         </div>
-        <h2>Règles :</h2>
         <div id="rules">
             <div id="addDiv">
                 <a href="#" id="import">Importer des règles</a>
@@ -27,13 +28,13 @@
             </div>
         </div>
     </div>
-    <h2>SLOGANS :</h2>
-    <div id="result"></div>
     <div id="boutons">
-        <a href="#" id="generate" onclick="hideInterface()">Générer</a>
+        <a href="#" id="generate" onclick="hideInterface()">Générer alétoirement votre slogan (recommencez jusqu'à ce qu'il vous plaise)</a>
         <a href="#" id="clear" onclick="showInterface()">Effacer</a>
         <a href="javascript:window.print()" id="print">Imprimer</a>
+        <h2>SLOGANS :</h2>
     </div>
+    <div id="result"></div>
     <script type="text/template" id="addRule">
         <a class="close" href="#">🗙</a>
             <p><label>Écrivez ci-dessous un : </label><input type="text" class="name" value="<%= title %>"></p>
@@ -42,21 +43,27 @@
     </script>
     <script>
 function showOne() {
-  var x = document.getElementById("phrase");
+    var x = document.getElementById("phrase");
     x.style.display = "none";
-    var y = document.getElementById("clear")
-    y.style.display = "none";
-    var y = document.getElementById("print")
-    y.style.display = "none";
+    //var y = document.getElementById("clear")
+    //y.style.display = "none";
+    //var y = document.getElementById("print")
+    //y.style.display = "none";
+    //var y = document.getElementById("import")
+    //y.style.display = "none";
+    //var y = document.getElementById("export")
+    //y.style.display = "none";
+    //var y = document.getElementById("add")
+    //y.style.display = "none";
 
 }
 function hideInterface() {
-  var x = document.getElementById("interface");
-    x.style.display = "none";
-  var y = document.getElementById("clear");
-    y.style.display = "block";
-  var z = document.getElementById("print");
-    z.style.display = "block";
+  //var x = document.getElementById("interface");
+    //x.style.display = "none";
+  //var y = document.getElementById("clear");
+    //y.style.display = "block";
+  //var z = document.getElementById("print");
+    //z.style.display = "block";
 }
 function showInterface() {
   var x = document.getElementById("interface");
