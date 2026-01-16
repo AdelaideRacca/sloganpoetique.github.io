@@ -52,6 +52,12 @@ textarea {
     margin-top: 0.5em;
 }
 
+h1 {
+    font-size: 50px;
+    color: Tomato;
+    text-transform: uppercase;
+}
+
 a {
     display: inline-block;
     width: 100%;
@@ -85,7 +91,7 @@ a {
 }
 
 #result p {
-    font: 50px "Helvetica", sans-serif;
+    font: 100px "Helvetica", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -97,6 +103,9 @@ a {
     #interface {
         display: none !important;
     }
+    h1 {
+        display: none !important;
+    }  
     h2 {
         display: none !important;
     }    
@@ -106,16 +115,17 @@ a {
     #result {
         display: block !important;
         color: black;
-        font: 20px "Helvetica", sans-serif;
+        font: "Helvetica", sans-serif;
+        font-size: 100px !important;
         text-transform: uppercase;
         font-weight: bold;
         /*writing-mode: vertical-rl;*/
     } 
 }
 @page {
-  size: 180mm 58mm;
-  margin-top: 2mm;
-  margin-right: 2mm;
-  margin-bottom: 2mm;
-  margin-left: 2mm;
+  size: 148mm 210mm;
+  margin-top: 8mm;
+  margin-right: 8mm;
+  margin-bottom: 8mm;
+  margin-left: 5mm;
 }
